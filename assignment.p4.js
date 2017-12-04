@@ -1,7 +1,7 @@
 function getHTML (options, callback) {
   var https = require('https');
   var chunksArray = [];
-  var html = "";
+  var html = [];
 
   https.get(options, function (response) {
 
@@ -12,7 +12,7 @@ function getHTML (options, callback) {
     });
 
     response.on('end', function() {
-      html = (chunksArray.toString());
+      html = chunksArray.join();
       return callback(html);
     });
 
