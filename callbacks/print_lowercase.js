@@ -8,6 +8,6 @@ var requestOptions = {
 var printLowerCase = function printHTML (html) {
   htmlString = html.toString();
   console.log(htmlString.toLowerCase());
-}
+};
 
 console.log(getHTML(requestOptions, printLowerCase));

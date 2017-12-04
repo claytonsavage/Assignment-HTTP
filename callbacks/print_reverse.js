@@ -7,10 +7,10 @@ var requestOptions = {
 
 var printReverse = function printHTML (html) {
   var htmlArray = [];
-  var arrayString = ''
+  var arrayString = '';
   htmlArray = html.split("");
   arrayString = htmlArray.reverse().join('');
   console.log(arrayString);
-}
+};
 
 console.log(getHTML(requestOptions, printReverse));

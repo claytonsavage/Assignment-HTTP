@@ -8,6 +8,6 @@ var requestOptions = {
 var printUppercase = function printHTML (html) {
   htmlString = html.toString();
   console.log(htmlString.toUpperCase());
-}
+};
 
 getHTML(requestOptions, printUppercase);
