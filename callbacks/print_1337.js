@@ -1,1 +1,1 @@
-print_1337.js
+var getHTML = require('../http-functions');
