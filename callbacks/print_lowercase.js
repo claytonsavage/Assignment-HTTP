@@ -5,8 +5,9 @@ var requestOptions = {
   path: '/http-examples/step5.html'
 };
 
-var printHTML = function printHTML (html) {
-  console.log(html);
+var printLowerCase = function printHTML (html) {
+  htmlString = html.toString();
+  console.log(htmlString.toLowerCase());
 }
 
-console.log(getHTML(requestOptions, printHTML));
+console.log(getHTML(requestOptions, printLowerCase));
